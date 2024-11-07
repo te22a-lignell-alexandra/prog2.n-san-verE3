@@ -36,4 +36,34 @@ static double CircleArea(double r)
     return area;
 }
 
+static int GetNumberInput()
+{
+    System.Console.WriteLine("a number. please");
+    string number = Console.ReadLine();
+    int numberInt = 0;
+    bool valid = int.TryParse(number, out numberInt);
 
+    while (valid == false)
+    {
+        System.Console.WriteLine("number.");
+        number = Console.ReadLine();
+        valid = int.TryParse(number, out numberInt);
+    }
+
+    return numberInt;
+}
+
+static int GetChoice(string donkey, string idiotsandwich, string lambsauce)
+{
+    System.Console.WriteLine($"{donkey}\n{idiotsandwich}\n{lambsauce}\n");
+    System.Console.WriteLine("Choose. please");
+    string choice = Console.ReadLine().ToLower();
+    while (choice != donkey || choice != idiotsandwich || choice != lambsauce)
+    {
+        System.Console.WriteLine($"Choose. (hint. write {donkey}, {idiotsandwich}, or {lambsauce})");
+        choice = Console.ReadLine().ToLower();
+    }
+    if (choice == donkey) return 1;
+    else if (choice == idiotsandwich) return 2;
+    else return 3;
+}
