@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj": {}
+    "c:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj": {
+    "c:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj",
+        "projectUniqueName": "c:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj",
         "projectName": "näsan3",
-        "projectPath": "C:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj",
+        "projectPath": "c:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\näsan3.csproj",
         "packagesPath": "C:\\Users\\alexandra.lignell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\obj\\",
+        "outputPath": "c:\\Users\\alexandra.lignell\\Documents\\Programmering\\C#\\prog2.näsanöverE3\\näsan3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

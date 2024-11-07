@@ -1,5 +1,10 @@
-﻿
-System.Console.WriteLine(CircleArea(2));
+﻿using System.Runtime.InteropServices;
+
+string[] Words = ["donkey", "idiotsandwich", "lambsauce", "mold"];
+
+Console.WriteLine(GetChoice(Words));
+
+
 
 Console.ReadLine();
 // -------------------metoder-------------------
@@ -53,17 +58,32 @@ static int GetNumberInput()
     return numberInt;
 }
 
-static int GetChoice(string donkey, string idiotsandwich, string lambsauce)
+
+static int GetChoice(string[] Stuff)
 {
-    System.Console.WriteLine($"{donkey}\n{idiotsandwich}\n{lambsauce}\n");
-    System.Console.WriteLine("Choose. please");
-    string choice = Console.ReadLine().ToLower();
-    while (choice != donkey || choice != idiotsandwich || choice != lambsauce)
+    for (int i = 0; i < Stuff.Length; i++)
     {
-        System.Console.WriteLine($"Choose. (hint. write {donkey}, {idiotsandwich}, or {lambsauce})");
-        choice = Console.ReadLine().ToLower();
+        System.Console.WriteLine($"{i+1}: {Stuff[i]}");
     }
-    if (choice == donkey) return 1;
-    else if (choice == idiotsandwich) return 2;
-    else return 3;
+    System.Console.WriteLine("choose. please");
+    string choice = Console.ReadLine();
+    int number = 0;
+    bool valid = int.TryParse(choice, out number);
+    while (valid == false || number > Stuff.Length)
+    {
+        System.Console.WriteLine("no. choose.");
+        choice = Console.ReadLine();
+        valid = int.TryParse(choice, out number);
+    }
+
+    int returnValue = 0;
+    for (int i = 0; i < Stuff.Length; i++)
+    {
+        if (number == i + 1)
+        {
+            returnValue = i+1;
+        }
+    }
+
+    return returnValue;
 }
